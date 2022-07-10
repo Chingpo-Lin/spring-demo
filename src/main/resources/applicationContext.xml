@@ -1,0 +1,77 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+<!--        https://www.springframework.org/schema/beans/spring-beans.xsd-->
+<!--        http://www.springframework.org/schema/aop-->
+<!--        http://www.springframework.org/schema/aop/spring-aop-4.2.xsd"-->
+<!--        xmlns:aop="http://www.springframework.org/schema/aop">-->
+
+<!--&lt;!&ndash;    <bean id="video" class="net.xdclass.spring.domain.Video" scope="singleton" init-method="init" destroy-method="destroy">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <property name="id" value="9"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="title" value="Spring 5.x"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <bean id="videoOrder" class="net.xdclass.spring.domain.VideoOrder" autowire="byName">&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean id="videoOrder" class="net.xdclass.spring.domain.VideoOrder" autowire="byType">&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean id="videoOrder" class="net.xdclass.spring.domain.VideoOrder" autowire="constructor">&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="id" value="9"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="outTradeNo" value="scmowjoqjo18308903"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--    <bean id="timeHandler" class="net.xdclass.spring.aop.TimeHandler"/>-->
+<!--    <bean id="videoService" class="net.xdclass.spring.service.VideoServiceImpl"/>-->
+
+<!--&lt;!&ndash;    aop配置&ndash;&gt;-->
+<!--    <aop:config>-->
+<!--        <aop:aspect id="timeAspect" ref="timeHandler">-->
+<!--            <aop:pointcut id="allMethodLogPointCut" expression="execution(* net.xdclass.spring.service.VideoService.*(..))"/>-->
+<!--            <aop:before method="printBefore" pointcut-ref="allMethodLogPointCut"/>-->
+<!--            <aop:after method="printAfter" pointcut-ref="allMethodLogPointCut"/>-->
+<!--        </aop:aspect>-->
+<!--    </aop:config>-->
+
+<!--&lt;!&ndash;    <bean class="net.xdclass.spring.processor.CustomBeanPostProcessor2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean class="net.xdclass.spring.processor.CustomBeanPostProcessor"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <bean id="video2" class="net.xdclass.spring.domain.Video2" scope="singleton" parent="video">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <property name="summary" value="zhegeshi summary"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    &lt;!&ndash;设置俩bean关系，video靠前&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean id="videoOrder" class="net.xdclass.spring.domain.VideoOrder" depends-on="video">&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="id" value="8"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="outTradeNo" value="23113mklcakalskkl2"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="video" ref="video"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <bean id="video" class="net.xdclass.spring.domain.Video">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <constructor-arg name="title" value="mianshizhuantikechengdiyiji"></constructor-arg>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <bean id="video" class="net.xdclass.spring.domain.Video">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        &lt;!&ndash;list zhuru&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="chapterList">&ndash;&gt;-->
+<!--&lt;!&ndash;            <list>&ndash;&gt;-->
+<!--&lt;!&ndash;                <value>firstlist</value>&ndash;&gt;-->
+<!--&lt;!&ndash;                <value>secondlist</value>&ndash;&gt;-->
+<!--&lt;!&ndash;                <value>thirdlist</value>&ndash;&gt;-->
+<!--&lt;!&ndash;            </list>&ndash;&gt;-->
+<!--&lt;!&ndash;        </property>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <property name="videoMap">&ndash;&gt;-->
+<!--&lt;!&ndash;            <map>&ndash;&gt;-->
+<!--&lt;!&ndash;                <entry key="1" value="firstmap"></entry>&ndash;&gt;-->
+<!--&lt;!&ndash;                <entry key="2" value="secondmap"></entry>&ndash;&gt;-->
+<!--&lt;!&ndash;                <entry key="3" value="thirdmap"></entry>&ndash;&gt;-->
+<!--&lt;!&ndash;            </map>&ndash;&gt;-->
+<!--&lt;!&ndash;        </property>&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+
+<!--</beans>-->
